@@ -89,8 +89,11 @@ array:2 [▼
 ```
 #### Statuses:
 `0` - new message
+
 `1` - message send
+
 `2` - message wait retry
+
 `3` - message undelivered
 
 ### Get credit balances
