@@ -1,0 +1,12 @@
+{
+    "name": "uapixart/laravel-turbosms",
+    "description": "Turbosms package for Laravel",
+    "authors": [
+        {
+            "name": "Mykola Kuzmich",
+            "email": "ua.pixart@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
