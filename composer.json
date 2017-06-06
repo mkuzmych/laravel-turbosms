@@ -1,6 +1,5 @@
 {
     "name": "uapixart/laravel-turbosms",
-<<<<<<< HEAD
     "description": "TurboSMS package for Laravel",
     "keywords": ["laravel", "turbosms"],
     "authors": [
@@ -10,18 +9,6 @@
             "homepage": "https://www.pixart.com.ua"
         }
     ],
-    "autoload": {
-		"psr-4": {
-			"Uapixart\\LaravelTurbosms\\": "src/"
-		}
-	},
-	"require": {
-		"php": ">=5.4.0",
-		"illuminate/support": "5.*"
-	},
-	"license": "MIT",
-	"minimum-stability": "dev"
-=======
     "description": "Turbosms package for Laravel",
     "authors": [
         {
@@ -35,6 +22,8 @@
         }
     },
     "minimum-stability": "dev",
-    "require": {}
->>>>>>> 2d459bb11f62c37fecf1a1ab345a002f595a288b
+    "require": {
+		"php": ">=5.4.0",
+		"illuminate/support": "5.*"
+	},
 }
