@@ -10,12 +10,6 @@ Either run
 ```shell
 composer require uapixart/laravel-turbosms
 ```
-or add
-```json
-"require": {
-    "uapixart/laravel-turbosms": "*"
-}
-```
 Add to config/app.php:
 ```php
 'providers' => array(
