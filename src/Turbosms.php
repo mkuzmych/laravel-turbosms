@@ -165,6 +165,8 @@ class Turbosms
 				// check for single phone send
 		        if (is_array($phones)) {
 					$destinations = implode (",", $phones);
+				} else {
+					$destinations = $phones;
 				}
 
 				// send Sms with Soap
