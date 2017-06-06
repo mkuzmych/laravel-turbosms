@@ -7,6 +7,11 @@
             "email": "ua.pixart@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Uapixart\\LaravelTurbosms\\": "src/"
+        }
+    },
     "minimum-stability": "dev",
     "require": {}
 }
