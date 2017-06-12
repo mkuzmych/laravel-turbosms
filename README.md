@@ -84,11 +84,16 @@ array:2 [▼
 #### Statuses:
 `0` - new message
 
-`1` - message send
+`1` - in queue
 
-`2` - message wait retry
+`2` - message wait retry in queue
 
-`3` - message undelivered
+`3` - message send
+
+`4` - message failed
+
+
+
 
 ### Get credit balances
 Get balance for user account from config
