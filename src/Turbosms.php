@@ -188,7 +188,7 @@ class Turbosms
 							// if message sended
 							if (preg_match('/^\{?[a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{12}\}?$/', $result)) {
 
-				  				$status = 1; // Send
+				  				$status = 3; // Sended
 				  				$status_detail = 'Message send'; 
 				  				$messageid = $result;
 
@@ -196,13 +196,13 @@ class Turbosms
 				  				// if final error
 				  				if(strpos($result, 'Не удалось распознать номер получателя') !== false || strpos($result, 'Страна не поддерживается') !== false ){
 				  				
-				  					$status = 3; // Undelivered
+				  					$status = 4; // Failed
 				  					$status_detail = 'Message undelivered: '.$result;
 				  					$messageid = null;
 				  				
 				  				} else {
 
-				  					$status = 2; // Waiting
+				  					$status = 2; // Waiting in queue
 				  					$status_detail = 'Message wait retry: '.$result;
 				  					$messageid = null;
 
@@ -238,7 +238,7 @@ class Turbosms
 		
 		} else {
 
-			$status = 1; // Sended
+			$status = 3; // Sended
 			$status_detail = 'Debug mode'; // Debug mode enabled
 			$messageid = null;
 
