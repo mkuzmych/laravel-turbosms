@@ -66,10 +66,12 @@ class Turbosms
 	*/
 	protected function getClient()
 	{
-		if (!$this->client) {
+		/* if (!$this->client) {
 			return $this->connect();
 		}
-		return $this->client;
+		return $this->client; */
+		
+		return $this->connect();
 	}
 
 	/**
@@ -81,9 +83,9 @@ class Turbosms
 	protected function connect()
 	{
 		// check for already exist client
-		if ($this->client) {
+		/* if ($this->client) {
 			return $this->client;
-		}
+		} */
 
 		// check for soap module for php
 		if(class_exists('SOAPClient')) {
