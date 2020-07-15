@@ -164,12 +164,11 @@ class Turbosms
 			// fi we have successful client soap created
 			if(is_a($client,'SoapClient')) {
 		
-				// check for single phone send
+			$destinations = $phones;
+				
 		        if (is_array($phones)) {
-					$destinations = implode (",", $phones);
-				} else {
-					$destinations = $phones;
-				}
+				$destinations = implode (",", $phones);
+			}
 
 				// send Sms with Soap
 				$results = $client->SendSMS([
